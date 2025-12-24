@@ -1,0 +1,347 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  max-width: auto;
+  padding: 20px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+header {
+  background-image: url("image/banner.png");
+  border-radius: 80px 80px 0 0;
+  color: white;
+  height: 500px;
+  width: auto;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /**top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    position: absolute;
+    border: 10px solid #ffffff;**/
+}
+
+/**.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+    object-fit: cover;
+}
+.wrapper img{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+    object-position: left center;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    height: 500px;
+    width: 100%;
+}**/
+
+nav {
+  background-color: #002db3; /* Ungu lebih gelap */
+  border-radius: 0 0 100px 100px;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center; /* Pusatkan secara horizontal */
+  align-items: center; /* Pusatkan secara vertikal */
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 15px 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  background-color: #fff;
+  color: #002db3;
+}
+.container {
+  display: grid;
+  /**grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));**/
+  gap: 20px;
+  padding: 20px;
+  max-width: 1814px;
+  margin: 0 auto;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h1 {
+  color: #0b2d99;
+  margin-top: 0;
+  text-align: center;
+  font-size: 50px;
+}
+.card p {
+  font-size: 17px;
+}
+h1 {
+  color: #0b2d99;
+  margin-top: 0;
+  text-align: center;
+}
+h2 {
+  color: #0b2d99;
+  margin-top: 0;
+  font-size: 30px;
+}
+h4 {
+  color: #2b2b2b;
+  margin-top: 0;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input,
+select,
+button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #0b2d99;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0a31b2;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+table th {
+  background-color: #f9f9f9;
+}
+
+/* CSS untuk link biasa */
+li a {
+  color: #2b2b2b; /* Warna biru */
+  text-decoration: none; /* Tanpa garis bawah */
+}
+
+/* Saat kursor diarahkan */
+li a:hover {
+  color: #0b2d99; /* Warna biru lebih gelap */
+  text-decoration: none; /* Tambah garis bawah */
+}
+
+/* Saat link diklik */
+li a:active {
+  color: #0a31b2; /* Warna biru lebih gelap lagi */
+}
+
+div.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1814px;
+  margin: 0px auto;
+}
+div.menu a {
+  color: #2b2b2b; /* Warna biru */
+  text-decoration: none; /* Tanpa garis bawah */
+}
+div.menu a:hover {
+  color: #0b2d99; /* Warna biru lebih gelap */
+  text-decoration: none; /* Tambah garis bawah */
+}
+
+/* Saat link diklik */
+div.menu a:active {
+  color: #0a31b2; /* Warna biru lebih gelap lagi */
+}
+
+div.menu-item {
+  margin: 5px;
+  border: 0px solid #ccc;
+  width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+div.menu-item img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.menu-item:hover {
+  border: 1px solid #f8f8f8;
+}
+
+div.menu-item p {
+  text-align: center;
+}
+
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 0;
+  padding: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.gallery-item {
+  margin: 0px;
+  border: 0px solid #ccc;
+  width: 500px;
+  background-color: #002db3;
+  border-radius: 0px;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+div.gallery-item1 {
+  margin: 0px;
+  border: 0px solid #ccc;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 0px;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #02299e;
+  background-color: #02299e;
+}
+div.gallery-item1:hover {
+  border: 1px solid #f8f8f8;
+  background-color: #f8f8f8;
+}
+
+div.gallery-item img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
+div.gallery-item1 img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
+
+div.gallery-item div.desc p {
+  padding: 0px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+div.gallery-item div.desc h1 {
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+div.gallery-item div.desc h2 {
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+div.gallery-item1 div.desc p {
+  padding: 0px;
+  text-align: center;
+  color: #002db3;
+  font-size: 18px;
+}
+div.gallery-item1 div.desc h1 {
+  padding: 0px;
+  text-align: center;
+  color: #002db3;
+}
+div.gallery-item1 div.desc h2 {
+  padding: 0px;
+  text-align: center;
+  color: #002db3;
+}
+
+footer {
+  background-color: #0b2d99;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
